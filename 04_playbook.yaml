@@ -1,5 +1,6 @@
 # Day 22
 
+# vars
 - name: play level variables
   hosts: local
   connection: local
@@ -8,5 +9,5 @@
     trainer: "siva"
   tasks:
     - name: print variables
-      ansible.buildin.debug:
+      ansible.builtin.debug:
         msg: "Course is {{course}}, trainer is {{trainer}}"
