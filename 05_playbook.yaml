@@ -1,0 +1,15 @@
+# Day 22
+
+# vars
+- name: task level variables
+  hosts: local
+  connection: local
+  vars:
+    course: "devops"
+    trainer: "siva"
+  tasks:
+    - name: print variables
+      vars:
+        course: "ansible"
+      ansible.builtin.debug:
+        msg: "Course is {{course}}, trainer is {{trainer}}"
