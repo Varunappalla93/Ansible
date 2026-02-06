@@ -1,8 +1,7 @@
 # Day 22
 
 # to get vars from inventory
-
-- name: print username and password
+- name: get vars from inventory
   hosts: local
   connection: local
 
