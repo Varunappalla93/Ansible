@@ -1,0 +1,8 @@
+# Day 22
+# inventory - what are the servers ansible can connect to.
+
+- name: "Ping the server"
+  hosts: "web"
+  tasks:
+    - name: "ping the server"
+      ansible.builtin.ping
