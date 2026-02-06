@@ -1,9 +1,9 @@
 # Day 22
 
-- name: "Ping the server"
-  hosts: "web"
+- name: Ping the server
+  hosts: web
   tasks:
-    - name: "ping the server"
+    - name: ping the server
       ansible.builtin.ping:
 
 
