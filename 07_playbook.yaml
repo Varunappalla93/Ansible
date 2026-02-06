@@ -1,6 +1,7 @@
 # Day 22
 
-- name: print username and password
+# prompts
+- name: print username and password using prompts
   hosts: local
   connection: local
   vars_prompt:
