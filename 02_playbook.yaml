@@ -1,0 +1,7 @@
+# Day 22
+
+- name: "Hello World"
+  hosts: "web"
+  tasks:
+    - name: "print hello world"
+      ansible.built.debug:
