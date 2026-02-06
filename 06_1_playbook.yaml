@@ -1,0 +1,12 @@
+# Day 22
+
+# vars
+- name: variables from another file
+  hosts: local
+  connection: local
+  vars_files:
+    - 06_2_playbook.yaml
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "Course is {{course}}, trainer is {{trainer}} and duration is {{duration}}"
