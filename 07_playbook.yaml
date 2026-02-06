@@ -1,0 +1,17 @@
+# Day 22
+
+- name: print username and password
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: "Pls enter your username"
+      private: false
+
+    - name: password
+      prompt: "Pls enter your password"
+      private: true
+
+  tasks:
+    ansible.builtin.debug:
+      msg: "username is {{username}} and password is {{password}}"
