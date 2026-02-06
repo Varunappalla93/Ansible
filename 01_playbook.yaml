@@ -1,5 +1,7 @@
 # Day 22
 
+# Playbook - list of ansible tasks
+
 - name: Ping the server
   hosts: web
   tasks:
