@@ -10,6 +10,6 @@
   tasks:
     - name: print variables
       vars:
-        course: "ansible"
+        course: "ansible"      # overrides the course var
       ansible.builtin.debug:
         msg: "Course is {{course}}, trainer is {{trainer}}"
