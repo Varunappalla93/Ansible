@@ -21,9 +21,10 @@
 
 # ansible-playbook -i inventory.ini 10_playbook.yaml -e name=VARUN
 
-# variable preference order - 
+# Ansible variables preference order - 
 # cmd line args 
 # Task
 # File
 # Prompt
-# play
+# Play
+# inventory
