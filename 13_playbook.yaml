@@ -8,14 +8,11 @@
       ansible.builtin.debug:
         msg: "{{ ansible_facts }}"
 
-  tasks:
     - name: check redhat or not
       ansible.builtin.debug:
         msg: "yes it is redhat"
       when: ansible_facts.os_family == "RedHat"
   
-
-  tasks:
     - name: check debian or not
       ansible.builtin.debug:
         msg: "yes it is debian"
