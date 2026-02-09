@@ -1,0 +1,18 @@
+# Day 23
+
+# ansible.builtin.command - simple ansible commands, more secure
+# ansible.builtin.shell - to get complete environment of the server, less secure
+# piping, redirection etc commands work in shell.
+
+- name: ansible command vs shell module
+  hosts: local
+  connection: local
+  tasks:
+    - name: command module test
+      # ansible.builtin.command: cat /etc/passwd | grep root  # | does not work in command module
+      ansible.builtin.shell: cat /etc/passwd | grep root
+      register: users_output
+    
+    -name: print output
+     ansible.builtin.debug:
+      msg: "{{users_output}}"
