@@ -13,8 +13,8 @@
       private: false
   tasks:
     - name: print name
-      vars:
-        NAME: "ANSIBLE from Task"
+      # vars:
+      #   NAME: "ANSIBLE from Task"
       ansible.builtin.debug:
         msg: "Hi {{NAME}}, Good morning"
 
@@ -23,3 +23,5 @@
 
 # variable preference order - 
 # cmd line args 
+# Task
+#
