@@ -8,7 +8,7 @@
   tasks:
     - name: greeting
       ansible.builtin.debug:
-        name: "Hello {{ greeting | default ('Good Afternoon') }}"
+        msg: "Hello Varun {{ greeting | default('Good Afternoon') }}"
 
     - name: convert string to list
       ansible.builtin.debug:
