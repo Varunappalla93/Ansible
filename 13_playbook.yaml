@@ -20,4 +20,3 @@
       ansible.builtin.debug:
         msg: "yes it is debian"
       when: ansible_facts.os_family == "Debian"
-  
