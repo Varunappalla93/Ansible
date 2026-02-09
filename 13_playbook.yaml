@@ -17,3 +17,14 @@
       ansible.builtin.debug:
         msg: "yes it is debian"
       when: ansible_facts.os_family == "Debian"
+
+
+# passes redhat and skips debian
+
+# TASK [check redhat or not] ***********************************
+# ok: [localhost] => {
+#     "msg": "yes it is redhat"
+# }
+
+# TASK [check debian or not] ******************************************************************************************
+# skipping: [localhost]
