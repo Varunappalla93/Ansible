@@ -7,3 +7,6 @@
     - name: print variables from args
       ansible.builtin.debug:
         msg: "Hi {{naam}} Good morning"
+
+
+# ansible-playbook -i inventory.ini 09_playbook.yaml -e naam=QA
