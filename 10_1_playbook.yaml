@@ -1,0 +1,22 @@
+# Day 23
+
+- name: Variables preference
+  hosts: local
+  connection: local
+  vars: 
+    NAME: "ANSIBLE from Play"
+  vars_files:
+    - 10_2_playbook.yaml
+  vars_prompt:
+    - name: NAME
+      prompt: Please enter name
+      private: false
+  tasks:
+    - name: print name
+      vars:
+        NAME: "ANSIBLE from Task"
+      ansible.builtin.debug:
+        msg: "Hi {{name}}, Good morning"
+
+
+# ansible-playbook -i inventory.ini 10_playbook.yaml -e name=QA
