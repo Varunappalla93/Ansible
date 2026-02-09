@@ -5,8 +5,8 @@
   connection: local
   vars: 
     NAME: "ANSIBLE from Play"
-  vars_files:
-    - 10_2_playbook.yaml
+  # vars_files:
+  #   - 10_2_playbook.yaml
   vars_prompt:
     - name: NAME
       prompt: Please enter name
@@ -24,4 +24,5 @@
 # variable preference order - 
 # cmd line args 
 # Task
-#
+# File
+# 
