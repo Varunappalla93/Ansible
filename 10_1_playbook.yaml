@@ -3,8 +3,8 @@
 - name: Variables preference
   hosts: local
   connection: local
-  vars: 
-    NAME: "ANSIBLE from Play"
+  # vars: 
+  #   NAME: "ANSIBLE from Play"
   # vars_files:
   #   - 10_2_playbook.yaml
   # vars_prompt:
@@ -26,4 +26,4 @@
 # Task
 # File
 # Prompt
-
+# play
