@@ -42,6 +42,9 @@
         msg: "{{ tagsList | items2dict }}"
 
 
+    - name: read students yaml
+      ansible.builtin.set_fact:  # setting the variable
+        students_yaml: "{{ lookup('file', students.yaml) | from_yaml }}"
 
 
 
