@@ -42,6 +42,9 @@
         msg: "{{ tagsList | items2dict }}"
 
 
+
+
+
 # TASK [convert string to list] ***************************************************************************************
 # ok: [localhost] => {
 #     "msg": [
@@ -68,4 +71,13 @@
 #             "value": "catalogue"
 #         }
 #     ]
+# }
+
+# TASK [convert list to map] ******************************************************************************************
+# ok: [localhost] => {
+#     "msg": {
+#         "component": "catalogue",
+#         "name": "ansible",
+#         "project": "roboshop"
+#     }
 # }
