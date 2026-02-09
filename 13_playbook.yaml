@@ -1,15 +1,9 @@
 # Day 23
 
-- name: conditions
+- name: gathering facts
   hosts: local
   connection: local
-  vars:
-    sessions_no: 4
   tasks:
-    - name: check if ansible is more than 5 sessions
+    - name: print facts
       ansible.builtin.debug:
-        msg: "yes it is live"
-      when: sessions_no > 5
-  
-
-  # skips if sessions_no is less than 5
+        msg: "{{ ansible_facts }}"
