@@ -21,3 +21,33 @@
     - name: convert map to list
       ansible.builtin.debug:
         msg: "{{ tags | dict2items }}"
+
+
+
+# TASK [convert string to list] ***************************************************************************************
+# ok: [localhost] => {
+#     "msg": [
+#         "linux",
+#         " shell",
+#         " ansible",
+#         " terraform"
+#     ]
+# }
+
+# TASK [convert map to list] ******************************************************************************************
+# ok: [localhost] => {
+#     "msg": [
+#         {
+#             "key": "name",
+#             "value": "ansible"
+#         },
+#         {
+#             "key": "project",
+#             "value": "roboshop"
+#         },
+#         {
+#             "key": "component",
+#             "value": "catalogue"
+#         }
+#     ]
+# }
