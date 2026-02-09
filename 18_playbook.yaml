@@ -87,3 +87,20 @@
 #         "project": "roboshop"
 #     }
 # }
+
+
+# TASK [read students yaml] *******************************************************************************************
+# ok: [localhost]
+
+# TASK [convert students yaml to json] ********************************************************************************
+# ok: [localhost] => {
+#     "msg": "[\n    {\n        \"Mobile\": 8106431775,\n      
+#   \"addresses\": [\n            {\n             
+#      \"Phase\": \"phase 5\",\n               
+#       \"area\": \"Kukatpally\",\n               
+#        \"flat no\": 1007\n            },\n        
+#            {\n                \"Phase\": \"phase 8\",\n     
+#    \"area\": \"Moosapet\",\n              
+#          \"flat no\": 1009\n  
+# }
+
