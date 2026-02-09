@@ -11,7 +11,7 @@
     - name: command module test
       # ansible.builtin.command: cat /etc/passwd | grep root  # | does not work in command module
       ansible.builtin.shell: cat /etc/passwd | grep root
-      register: users_output
+      register: users_output  # to take output in register keyword
     
     - name: print output
       ansible.builtin.debug:
