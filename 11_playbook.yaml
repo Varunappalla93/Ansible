@@ -1,0 +1,25 @@
+# Day 23
+
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    Program: "DevSecOps with AWS" # string
+    Duration: 140  # number
+    is_live: true # bool
+    Details: # map/dict
+      months: 4
+      trainer: "siva"
+    topics: # list
+      - linux
+      - shell
+      - ansible
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+        msg: |
+          program: {{Program}}
+          duration : {{Duration}}
+          is live : {{is_live}}
+          Details: {{Details}}
+          Topics: {{topics}}
