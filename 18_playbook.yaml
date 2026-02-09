@@ -6,4 +6,4 @@
   tasks:
     - name: greeting
       ansible.builtin.debug:
-        name: "Hello {{ greeting | default ( Good Afternoon)}}"
+        name: "Hello {{ greeting | default ('Good Afternoon') }}"
