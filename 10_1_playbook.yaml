@@ -7,10 +7,10 @@
     NAME: "ANSIBLE from Play"
   # vars_files:
   #   - 10_2_playbook.yaml
-  vars_prompt:
-    - name: NAME
-      prompt: Please enter name
-      private: false
+  # vars_prompt:
+  #   - name: NAME
+  #     prompt: Please enter name
+  #     private: false
   tasks:
     - name: print name
       # vars:
@@ -25,4 +25,5 @@
 # cmd line args 
 # Task
 # File
-# 
+# Prompt
+
