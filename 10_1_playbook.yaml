@@ -16,7 +16,10 @@
       vars:
         NAME: "ANSIBLE from Task"
       ansible.builtin.debug:
-        msg: "Hi {{name}}, Good morning"
+        msg: "Hi {{NAME}}, Good morning"
 
 
-# ansible-playbook -i inventory.ini 10_playbook.yaml -e name=QA
+# ansible-playbook -i inventory.ini 10_playbook.yaml -e name=VARUN
+
+# variable preference order - 
+# cmd line args 
