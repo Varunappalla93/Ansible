@@ -7,10 +7,10 @@
     Program: "DevSecOps with AWS" # string
     Duration: 140  # number
     is_live: true # bool
-    Details: # map/dict
+    Details: # map/dict - {}
       months: 4
       trainer: "siva"
-    topics: # list
+    topics: # list - []
       - linux
       - shell
       - ansible
