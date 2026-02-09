@@ -51,6 +51,7 @@
         msg: "{{ students_yaml | to_nice_json }}"
 
 
+# O/P:
 # TASK [convert string to list] ***************************************************************************************
 # ok: [localhost] => {
 #     "msg": [
@@ -103,4 +104,3 @@
 #    \"area\": \"Moosapet\",\n              
 #          \"flat no\": 1009\n  
 # }
-
