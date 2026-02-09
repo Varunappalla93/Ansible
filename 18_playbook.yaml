@@ -48,7 +48,7 @@
 
     - name: convert students yaml to json
       ansible.builtin.debug:
-        msg: "{{ student_yaml | to_nice_json }}"
+        msg: "{{ students_yaml | to_nice_json }}"
 
 
 # TASK [convert string to list] ***************************************************************************************
