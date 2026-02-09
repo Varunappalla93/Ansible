@@ -11,3 +11,7 @@
     - name: print variables
       ansible.builtin.debug:
         msg: "Course is {{course}}, trainer is {{trainer}}"
+
+
+# to run this playbook without username and password as its connection is local:
+# ansible-playbook -i inventory.ini 04_playbook.yaml
