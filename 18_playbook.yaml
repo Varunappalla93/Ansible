@@ -1,5 +1,5 @@
-# Day 23
-
+# Day 23 and 24
+ 
 - name: filters/functions
   hosts: local
   connection: local
