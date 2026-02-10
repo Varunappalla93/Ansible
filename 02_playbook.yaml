@@ -1,8 +1,17 @@
 # Day 22
 
-- name: Hello World
+# Multiple plays in a playbook
+- name: Hello World Play 1
   hosts: web
   tasks:
-    - name: print hello world
+    - name: print hello world 1
       ansible.builtin.debug:
-        msg: "Hello World"
+        msg: "Hello World 1"
+
+ 
+- name: Hello World Play 2
+  hosts: web
+  tasks:
+    - name: print hello world 2
+      ansible.builtin.debug:
+        msg: "Hello World 2"
