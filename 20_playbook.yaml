@@ -7,5 +7,5 @@
   become: yes
   tasks:
     - name: user creation
-      ansible.builtin.user:
+      ansible.builtin.user:  # user module
         name: roboshop
