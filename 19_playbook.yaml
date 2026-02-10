@@ -1,0 +1,22 @@
+# Day 24
+
+- name: error handling
+  hosts: local
+  connection: localhost
+  become: yes
+  tasks:
+    - name: check user exists or not
+      ansible.builtin.command: id roboshop
+      register: user_output
+      ignore_errors: true
+    
+    - name: print the output
+     ansible.builtin.debug:
+      msg: " {{ user_output }}"
+
+    - name: create the user
+      ansible.builtin.command: useradd roboshop
+      when: user_output.rc !=0
+    
+
+
