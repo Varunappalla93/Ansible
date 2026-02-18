@@ -32,6 +32,7 @@
 
 # if connection local is given
 # ansible-playbook 01_playbook.yaml or ansible-playbook -i localhost, 01_playbook.yaml
+
 # hosts: localhost
 # connection: local
 # means → run directly on the same machine.
