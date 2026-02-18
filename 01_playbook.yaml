@@ -3,7 +3,7 @@
 # Playbook - list of ansible tasks
 
 - name: Ping the server
-  hosts: frontend
+  hosts: web
   tasks:
     - name: ping the server
       ansible.builtin.ping:
