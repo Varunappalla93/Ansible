@@ -22,7 +22,7 @@
 
 - name: Ping the server
   hosts: localhost
-  # connection: local
+  connection: local
   tasks:
     - name: ping the server
       ansible.builtin.ping:
@@ -30,6 +30,8 @@
 # if connection local is not given
 # ansible-playbook -i localhost, -e ansible_user=ec2-user -e ansible_password=DevOps321 01_playbook.yaml
 
-
+# if connection local is given
 # ansible-playbook 01_playbook.yaml or ansible-playbook -i localhost, 01_playbook.yaml
+# hosts: localhost
+# connection: local
 # means → run directly on the same machine.
