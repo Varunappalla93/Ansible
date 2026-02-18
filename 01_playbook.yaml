@@ -15,10 +15,10 @@
       ansible.builtin.ping:
 
 
-# to run this playbook:
+# to run this playbook for both hosts web and local:
 # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01_playbook.yaml
 
-# ansible-playbook -i inventory.ini 01_playbook.yaml --limit web -> to run hosts in web group
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01_playbook.yaml --limit web -> to run hosts in web group
 
 - name: Ping the server
   hosts: localhost
