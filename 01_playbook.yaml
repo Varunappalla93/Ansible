@@ -8,6 +8,11 @@
     - name: ping the server
       ansible.builtin.ping:
 
+- name: Ping the server
+  hosts: local
+  tasks:
+    - name: ping the server
+      ansible.builtin.ping:
 
 # to run this playbook:
 # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01_playbook.yaml
