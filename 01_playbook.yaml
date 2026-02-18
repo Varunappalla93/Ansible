@@ -2,17 +2,17 @@
 
 # Playbook - list of ansible tasks
 
-# - name: Ping the server
-#   hosts: web
-#   tasks:
-#     - name: ping the server
-#       ansible.builtin.ping:
+- name: Ping the server
+  hosts: web
+  tasks:
+    - name: ping the server
+      ansible.builtin.ping:
 
-# - name: Ping the server
-#   hosts: local
-#   tasks:
-#     - name: ping the server
-#       ansible.builtin.ping:
+- name: Ping the server
+  hosts: local
+  tasks:
+    - name: ping the server
+      ansible.builtin.ping:
 
 
 # to run this playbook for both hosts web and local:
