@@ -9,8 +9,7 @@
       ansible.builtin.ping:
 
 - name: Ping the server
-  hosts: localhost
-  connection: local
+  hosts: local
   tasks:
     - name: ping the server
       ansible.builtin.ping:
