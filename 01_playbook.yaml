@@ -14,6 +14,12 @@
     - name: ping the server
       ansible.builtin.ping:
 
+
+# to run this playbook:
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01_playbook.yaml
+
+# ansible-playbook -i inventory.ini 01_playbook.yaml --limit web -> to run hosts in web group
+
 - name: Ping the server
   hosts: localhost
   connection: local
@@ -21,5 +27,6 @@
     - name: ping the server
       ansible.builtin.ping:
 
-# to run this playbook:
-# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01_playbook.yaml
+
+# ansible-playbook 01_playbook.yaml
+# means → run directly on the same machine.
