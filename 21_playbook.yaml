@@ -62,3 +62,5 @@
 # Now in ansible server, git clone the ansible repo and give  cat ansible.cfg to check for PRIVATE_KEY_FILE= /home/ec2-user/ansible
 # REMOTE_USER= ansible
 
+# execute playbook in ansible server to target node servers
+# ansible-playbook -i 172.31.31.224 01_playbook.yaml
