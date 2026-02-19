@@ -64,3 +64,6 @@
 
 # execute playbook in ansible server to target node servers
 # ansible-playbook -i 172.31.31.224 01_playbook.yaml
+
+# to check using ansible adhoc command
+# ansible all -i 172.31.31.224,  -m ping
