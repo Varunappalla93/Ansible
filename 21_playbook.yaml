@@ -1,6 +1,6 @@
 # Day 30
 
-# Connect ansible using private keys, it accepts only rsa algorithm keys, not ED25519 algorithm
+# Connect ansible using private keys, it accepts only rsa algorithm keys, not ED25519 algorithm keys.
 
 # Do all this in node server:
 
