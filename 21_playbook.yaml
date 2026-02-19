@@ -1,0 +1,60 @@
+# Day 30
+
+# Connect ansible using private keys, it accepts only rsa algorithm keys, not ED25519 algorithm
+
+# Do all this in node server:
+
+# create rsa key
+# ssh-keygen -t rsa -f ansible - ansible.pub(public key) and ansible private key will be generated.
+
+#  create user named ansible
+#  sudo useradd ansible
+
+# login as root user and go to home and created user
+#  sudo su -
+#  cd /home/ansible
+
+#  make .ssh directory and give permissions
+#  mkdir .ssh
+#  chmod -R 700 .ssh/
+
+# create authorized_keys file in .ssh directory
+# cd .ssh/
+# touch authorized_keys
+
+# exit from root
+# exit
+
+# check ansible public key and copy it
+# cat ansible.pub
+
+# login as root user and go to home and created user
+# sudo su -
+# cd /home/ansible
+
+# go to .ssh directory and paste public key in created authorized_keys file in .ssh directory
+# cd .ssh
+# vim authorized_keys - paste public key - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDqC7LvHp2XusMMR8uxCmZyOoGgNaAxnNYuXF9cfvRsv1DMQY5w4
+
+# give permissions and ownership of authorized_keys to ansible user and group
+# chmod 600 authorized_keys 
+# chown ansible:ansible authorized_keys 
+
+# come back and check for .ssh/ directory and give ownership of .ssh directory to ansible user and group
+# cd ..
+# ls -la 
+# chown ansible:ansible -R .ssh/
+
+# exit from root and check pub and private keys
+# exit 
+# ls -la
+
+# Now connect to ansible server and create file using vim ansible and paste the public key in this file
+# vim ansible
+
+
+# give user named ansible permissions 
+# chmod 600 ansible
+
+# connect to ansible server using private key and user named ansible
+# ssh -i ansible ansible@172.31.31.224
