@@ -10,7 +10,7 @@
 
  
 - name: Hello World Play 2
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
     - name: print hello world 2
