@@ -59,9 +59,9 @@
 # connect to ansible server using private key and user named ansible
 # ssh -i ansible ansible@172.31.31.224
 
-# add this private_key_file= /home/ec2-user/ansible remote_user= ansible in ansible.cfg  file
+# Add this private_key_file= /home/ec2-user/ansible and remote_user= ansible in ansible.cfg  file
 # Now in ansible server, git clone the ansible repo and give cat ansible.cfg to check for private_key_file= /home/ec2-user/ansible
-# remote_user= ansible
+# and remote_user= ansible
 
 # execute playbook in ansible server to target node servers
 # ansible-playbook -i 172.31.31.224 01_playbook.yaml
