@@ -18,4 +18,4 @@
         msg: "Hello World 2"
 
 
-# ansible-playbook -i localhost, 02_playbook.yaml
+# ansible-playbook -i localhost, 02_playbook.yaml - runs local group
