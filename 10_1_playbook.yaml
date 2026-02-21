@@ -24,7 +24,7 @@
 # Ansible variables preference order - 
 # cmd line args 
 # Task
-# File
 # Prompt
+# File(vars_files)
 # Play
 # inventory
