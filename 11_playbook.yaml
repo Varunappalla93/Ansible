@@ -21,5 +21,7 @@
           program: {{Program}}
           duration : {{Duration}}
           is live : {{is_live}}
-          Details: {{Details}}
+          Details: 
+            months: {{Details.months}}
+            trainer: {{ Details.trainer }}
           Topics: {{topics}}
