@@ -5,14 +5,14 @@
 # Do all this in node server:
 
 # create rsa key
-# ssh-keygen -t rsa -f ansible - ansible.pub(public key) and ansible private key will be generated.
+# ssh-keygen -t rsa -f ansible -> ansible.pub(public key) and ansible private key will be generated.
 
 #  create user named ansible
 #  sudo useradd ansible
 
 # login as root user and go to home and created user
 #  sudo su -
-#  cd /home/ansible
+#  cd /home/ec2-user/ansible
 
 #  make .ssh directory and give permissions
 #  mkdir .ssh
@@ -30,7 +30,7 @@
 
 # login as root user and go to home and created user
 # sudo su -
-# cd /home/ansible
+# cd /home/ec2-user/ansible
 
 # go to .ssh directory and paste public key in created authorized_keys file in .ssh directory
 # cd .ssh
