@@ -1,0 +1,37 @@
+Shell Scripting disadvantages - 
+no idempotency
+little complex
+no error handling
+handling large scale servers are tough
+distribution specific, scripts works only for centos or for ubuntu etc
+
+hence to minimize these disadvantages, we can use a configuration management tool called Ansible which follows a push based mechanism.
+
+
+pull - agent software to be installed in every node server which connects with configuration management server.
+it will lead to unncessary installation/traffic, resources wastage, no adhoc updates, new protocol on how to connect and download updates
+
+push - uses SSH protocol to push to CM server, hence no agent is required in node servers, hence no resources are wasted.
+eg: Ansible.
+
+Ansible is developed using python and it is from Redhat community.
+
+Ansible/Control Server connects to multiple Ansible nodes.
+
+sudo dnf install ansible -y -> to install ansible
+ansible [core 2.14.18]
+
+
+ansible all -i 172.31.20.234, -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping  ->  to connect to node 1 server and get ping response, 
+-e stands for extra args, -m stands for modules.
+
+
+ansible all -i 172.31.20.234, -e ansible_user=ec2-user -e ansible_password=DevOps321 -b -m dnf -a 'name=nginx state=installed' -> to connect 
+to node 1 server and install nginx, -e stands for extra args, -m stands for modules, -b stands for root user, -a stands for argument names.
+
+
+ansible all -i 172.31.20.234, -e ansible_user=ec2-user -e ansible_password=DevOps321 -b -m service -a 'name=nginx state=started' -> to start 
+nginx service on node1 public ip address, i.e. eg: http://3.88.202.147
+
+
+Ansible Playbooks uses YAML language.
