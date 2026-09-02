@@ -16,3 +16,18 @@
 # hosts: local
 # connect 
 # targetting same server and no need to give username and password
+
+
+# PLAY [play level variables] *****************************************************************
+
+# TASK [Gathering Facts] **********************************************************************
+# ok: [localhost]
+
+# TASK [print the variables] ******************************************************************
+# ok: [localhost] => {
+#     "msg": "course is devops and trainer is siva"
+# }
+
+# PLAY RECAP **********************************************************************************
+# localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
