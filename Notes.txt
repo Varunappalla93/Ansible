@@ -38,3 +38,11 @@ Ansible Playbooks uses YAML language.
 
 
 ansible frontend -i inventory.ini --list-hosts -> to get frontend ip addresses from inventory.ini
+
+ansible all -i inventory.ini --list-hosts -> to get all ip from inventory.ini
+
+ansible roboshop -i inventory.ini --list-hosts -> to get roboshop ips from inventory.ini
+
+ansible ungrouped -i inventory.ini --list-hosts -> to get ungrouped ips from inventory.ini
+
+ansible-inventory -i inventory.ini --graph - to get all hosts in graph format
