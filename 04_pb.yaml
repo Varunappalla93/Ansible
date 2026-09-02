@@ -1,8 +1,8 @@
 - name: external file variables
   hosts: local
   connection: local
-  vars_file:
-    04_vars.yaml
+  vars_files:
+    - 04_vars.yaml
   tasks:
     - name: print external file variables
       vars:
