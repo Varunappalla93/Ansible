@@ -7,3 +7,7 @@
     - name: print external file variables
       ansible.builtin.debug:
         msg: "course is {{course}} and trainer is {{trainer}}"
+
+
+  # task level variables if present will always override vars_file level variables
+  # Task vars > Play vars > vars_files
