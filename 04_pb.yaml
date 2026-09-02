@@ -10,4 +10,3 @@
 
 
   # task level variables if present will always override vars_file level variables
-  # Hence Task vars > Play vars > vars_files

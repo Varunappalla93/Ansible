@@ -3,7 +3,8 @@
   connection: local
   tasks:
     - name: print variable from inventory
-      vars:
-        course: "azure"
       ansible.builtin.debug:
         msg: "course is {{course}}"
+
+
+  # Hence Task > Inventory > Play > vars_files
