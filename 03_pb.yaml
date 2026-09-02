@@ -1,0 +1,18 @@
+- name: play level variables
+  hosts: local
+  connection: local 
+  vars:
+    course: "devops"
+    trainer: "siva"
+  tasks:
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "course is {{course}} and trainer is {{trainer}}"
+
+
+
+
+
+# hosts: local
+# connect 
+# targetting same server and no need to give username and password
