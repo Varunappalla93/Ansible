@@ -1,0 +1,6 @@
+- name: ping the server
+  hosts: inventory.ini
+  become: yes
+  
+  
+
