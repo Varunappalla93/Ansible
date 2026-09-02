@@ -6,6 +6,9 @@
     trainer: "siva"
   tasks:
     - name: print the variables
+      vars:
+        course: 'AWS'
+        trainer: "praveen"
       ansible.builtin.debug:
         msg: "course is {{course}} and trainer is {{trainer}}"
 
@@ -14,8 +17,8 @@
 
 
 # hosts: local
-# connect 
-# targetting same server and no need to give username and password
+# connection: local 
+# targetting same server and no need to give username and password as we gave connection: local 
 
 
 # PLAY [play level variables] *****************************************************************
