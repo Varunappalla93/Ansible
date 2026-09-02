@@ -1,0 +1,12 @@
+- name: external file variables
+  hosts: local
+  connection: local
+  vars_file:
+    04_vars.yaml
+  tasks:
+    - name: print external file variables
+      vars:
+        course: "selenium"
+        trainer: "naveen"
+      ansible.builtin.debug:
+        msg: "course is {{course}} and trainer is {{trainer}}"
