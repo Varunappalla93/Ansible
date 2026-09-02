@@ -1,4 +1,4 @@
-- name: play level variables
+- name: play and task level variables
   hosts: local
   connection: local 
   vars:
@@ -13,24 +13,28 @@
         msg: "course is {{course}} and trainer is {{trainer}}"
 
 
+# ansible-playbook -i inventory.ini 03_pb.yaml -> to run this playbook
 
-
-
+# targetting same server, hence hosts:local and no need to give username and password as we gave connection: local as below:
 # hosts: local
 # connection: local 
-# targetting same server and no need to give username and password as we gave connection: local 
 
 
-# PLAY [play level variables] *****************************************************************
+# task level variables always override play level variables
+
+
+# O/P:
+# PLAY [play and task level variables] *****************************************************************
 
 # TASK [Gathering Facts] **********************************************************************
 # ok: [localhost]
 
 # TASK [print the variables] ******************************************************************
 # ok: [localhost] => {
-#     "msg": "course is devops and trainer is siva"
+#     "msg": "course is AWS and trainer is praveen"
 # }
 
 # PLAY RECAP **********************************************************************************
 # localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
 
