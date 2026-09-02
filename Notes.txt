@@ -35,3 +35,6 @@ nginx service on node1 public ip address, i.e. eg: http://3.88.202.147
 
 
 Ansible Playbooks uses YAML language.
+
+
+ansible frontend -i inventory.ini --list-hosts -> to get frontend ip addresses from inventory.ini
