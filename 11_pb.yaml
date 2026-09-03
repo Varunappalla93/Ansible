@@ -1,0 +1,15 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+    - name: print names
+      ansible.builtin.debug:
+        msg: "Hello {{item}}"
+      loop:
+        - QA1
+        - QA2
+        - QA3
+
+
+   
+      
