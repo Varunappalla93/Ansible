@@ -5,6 +5,3 @@
     - name: print variable from inventory
       ansible.builtin.debug:
         msg: "course is {{course}}"
-
-
-  # Hence Variables Order is  Task > Inventory > Play > vars_files
