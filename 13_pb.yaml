@@ -5,10 +5,10 @@
   vars:
     # greeting: "Good morning"
     topics: linux,shell,docker,terraform
-  tags:
-    name: "ansible"
-    project: "roboshop"
-    component: "catalogue"
+    tags:
+      name: "ansible"
+      project: "roboshop"
+      component: "catalogue"
   tasks:
     - name: default msg
       ansible.builtin.debug:
