@@ -1,0 +1,23 @@
+- name: Data types
+  hosts: local
+  connection: local
+  vars:
+    course: "devops" # string
+    duration: 140 # number
+    is_live: true # bool
+    details:
+      months: 4
+      trainer: siva
+    topics:
+      - Ansible
+      - Docker
+      - Terraform
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+        msg: |
+          program: {{course}}
+          duration: {{duration}}
+          isLive: {{is_live}}
+          details:{{ details}}
+          topics: {{topics}}
