@@ -3,12 +3,12 @@
   connection: local
   vars:
     course: "devops" # string
-    duration: 140 # number
+    duration: 140.43 # number
     is_live: true # bool
-    details:
+    details: # map
       months: 4
       trainer: siva
-    topics:
+    topics: # list
       - Ansible
       - Docker
       - Terraform
