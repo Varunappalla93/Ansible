@@ -2,6 +2,8 @@
   hosts: local
   connection: local
   become: yes
+  vars:
+    greeting: "GM"
   tasks:
     - name: greeting
       ansible.builtin.debug:
