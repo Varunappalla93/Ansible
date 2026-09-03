@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-    is_live: true
+    sessions_count: 6
   tasks:
-    - name: check live or not
+    - name: check sessions count greater than 1
       ansible.builtin.debug:
-        msg: "Yes it is live"
-      when: is_live
+        msg: "Yes it is greater than 1"
+      when: sessions_count>1
        
