@@ -5,11 +5,20 @@
   vars:
     # greeting: "Good morning"
     topics: linux,shell,docker,terraform
+  tags:
+    name: "ansible"
+    project: "roboshop"
+    component: "catalogue"
   tasks:
     - name: default msg
       ansible.builtin.debug:
         msg: "Hi QA {{greeting | default('GD MRG') }}"
 
-    - name: comvert string to list
+    - name: convert string to list
       ansible.builtin.debug:
         msg: "{{ topics | split(',') }}"
+
+    
+    - name: convert map to list
+      ansible.builtin.debug:
+        msg: "{{ tags | dict2items }}" # map to list
