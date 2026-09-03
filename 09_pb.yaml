@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    sessions_count: 0
+    sessions_count: 6
   tasks:
     - name: check sessions count greater than 1
       ansible.builtin.debug:
