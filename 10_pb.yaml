@@ -1,0 +1,11 @@
+- name: command vs shell
+  hosts: local
+  connection: local
+  tasks:
+    - name: command module test
+      ansible.builtin.command: cat /etc/passwd | grep root
+      register: users_output
+      
+
+# ansible.builtin.command - simple commands to execute, more secure, redirections/pipe commands and other commands will not work
+# ansible.builtin.shell - wil get entire env of server, less secure, redirections/pipe commands and other commands work
