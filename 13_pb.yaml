@@ -1,0 +1,9 @@
+- name: filters/functions
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: greeting
+      ansible.builtin.debug:
+        msg: "Hi QA {{greeting}}"
+  
