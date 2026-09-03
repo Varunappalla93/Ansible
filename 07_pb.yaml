@@ -7,4 +7,6 @@
         msg: "name is {{name}}"
 
 
+# ansible-playbook -i inventory.ini -e 'name="VARUN APPALLA"' 07_pb.yaml
 
+# Hence Variables Order is  cmd line Args > Task > vars_files > Prompt > Play > Inventory 
