@@ -28,7 +28,7 @@
   tasks:
     - name: default msg
       ansible.builtin.debug:
-        msg: "Hi QA {{greeting | default('GD MRG') }}"
+        msg: "Hi QA {{ greeting | default('GD MRG') }}"
 
     - name: convert string to list
       ansible.builtin.debug:
@@ -41,4 +41,4 @@
 
     - name: convert list to map
       ansible.builtin.debug:
-        msg: "{{ tagsList | items2dict }}" # map to list of map
+        msg: "{{ tagsList | items2dict }}" # list to map
