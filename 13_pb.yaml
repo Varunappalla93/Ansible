@@ -2,8 +2,13 @@
   hosts: local
   connection: local
   become: yes
+  vars:
+    topics: linux,shell,docker,terraform
   tasks:
-    - name: greeting
+    - name: default msg
       ansible.builtin.debug:
         msg: "Hi QA {{greeting | default('GD MRG') }}"
-  
+
+    - name: comvert string to list
+      ansible.builtin.debug:
+        msg: "{{ topics | split(',') }}"
