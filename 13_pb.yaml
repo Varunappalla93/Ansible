@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    greeting: "Good morning"
+    # greeting: "Good morning"
     topics: linux,shell,docker,terraform
   tasks:
     - name: default msg
