@@ -5,7 +5,7 @@
   vars:
     # greeting: "Good morning"
     topics: linux,shell,docker,terraform
-    tags:
+    tagsList:
       name: "ansible"
       project: "roboshop"
       component: "catalogue"
