@@ -9,7 +9,7 @@
 
     - name: print output
       ansible.builtin.debug:
-        msg: {{users_output}}
+        msg: "{{users_output}}"
       
 
 # ansible.builtin.command - simple commands to execute, more secure, redirections/pipe commands and other commands will not work
