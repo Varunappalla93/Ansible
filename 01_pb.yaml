@@ -6,3 +6,4 @@
         msg: "Hello World"
 
   # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01_pb.yaml - run this playbook
+  # playbook is collection of plays, can have more than 1 play
