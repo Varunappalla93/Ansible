@@ -1,0 +1,8 @@
+- name: check idempotency # works only for ansible modules
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: user creation
+      ansible.builtin.user:
+        name: "QA1"
